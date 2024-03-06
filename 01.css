@@ -1,0 +1,134 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    font-family:fantasy;
+    width: 100%;
+    height: 100vh;
+    overflow: hidden;
+    background: #f0f0f0;
+}
+
+nav{
+    height: 10vh;
+    width: 100%;
+
+    ul{
+        height: 100%;
+        display: flex;
+        align-items: center;
+    }
+}
+
+nav ul li{
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a{
+    color: #222;
+    opacity: 1;
+}
+
+.main_section{
+    width: 100%;
+    display: -ms-grid;
+    display: grid;
+    -ms-grid-column: 50% 50%;
+    grid-template-columns : 50% 50%;
+    position: absolute;
+    top: 10vh;
+    background-color: #f0f0f0;
+    z-index: 9;
+}
+
+.left{
+    padding: 70px 0;
+}
+
+.left h1{
+    font-size: 5em;
+    font-family: monospace;
+    line-height: 1em;
+    margin: 0;
+    color: #222;
+    opacity: 0;
+    -webkit-clip-path : polygon(0 0, 0 0, 0 100%, 0 100%);
+    clip-path : polygon(0 0, 0 0, 0 100%, 0 100%);
+}
+
+.left p{
+    padding: 10px 10px 10px 0;
+    -webkit-clip-path : polygon(0 0, 0 0, 0 100%, 0 100%);
+    clip-path : polygon(0 0, 0 0, 0 100%, 0 100%);
+}
+
+.left a{
+    padding: 10px 20px;
+    background: #222222;
+    color: #f0f0f0;
+    -webkit-clip-path : polygon(0 0, 0 0, 0 100%, 0 100%);
+    clip-path : polygon(0 0, 0 0, 0 100%, 0 100%);
+}
+
+.right{
+    padding: 50px;
+}
+
+.right img.conts{
+    width: 100%;
+    height: 100%;
+    -webkit-clip-path : polygon(0 0, 100% 0, 100% 0, 0 0);
+    clip-path : polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+.second_section{
+    background: #eceff4;
+    width: 100%;
+    height: 100vh;
+    text-align: center;
+    overflow: hidden;
+    position: relative;
+}
+
+
+.second_section hr{
+    width: 30%;
+    border: 1.4px solid #222222;
+    transform: translateY(-17px);
+}
+
+.second_section .glitch_img{
+    display: grid;
+    grid-template-columns: 35% 35% 35%;
+    grid-gap: 15px;
+}
+
+.second_section .glitch_img img{
+    margin-top: 50px;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.second_section a{
+    float: right;
+    padding: 4px 20px;
+    display: inline-block;
+    background-color: #222222;
+    color: #f0f0f0;
+    font-size: 30px;
+    transform: translateY(-170px);
+}
+
+.second_section .line{
+    width: 5px;
+    height: 100%;
+    background-color: #222222;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    z-index: -1;
+}
